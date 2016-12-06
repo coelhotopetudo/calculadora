@@ -1,0 +1,26 @@
+<html><body>
+    <script type="text/javascript">
+     function somar() {
+         var valor1 = document.calcform.valor1.value;
+         var valor2 = document.calcform.valor2.value;
+
+         var res = parseInt(valor1) + parseInt(valor2);
+
+         document.calcform.res.value = res;
+     }
+    </script>
+    <form name="calcform" method="post" action="">
+        <fieldset>
+            <legend>Calculadora</legend>
+
+            <input type="text" name="valor1" style='width: 52px' id="valor1" />
+            +
+            <input type="text" name="valor2" style='width: 52px' id="valor2" />
+
+            <input type="button" value=" = " class="botao" onClick="somar()"/>
+            <input type="text" name="res" id="res" style='width: 52px'/>
+
+        </fieldset>
+    </form>
+</body></html>
+
